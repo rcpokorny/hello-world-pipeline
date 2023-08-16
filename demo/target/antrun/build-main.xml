@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <mkdir dir="C:\dev\Java_Dev\Hello-world-plugin\hello-world-pipeline\demo\target/tmp" />
+  </target>
+</project>

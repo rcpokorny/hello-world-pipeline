@@ -7,12 +7,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                git 'https://github.com/rcpokorny/hello-world-pipeline.git'
+                sh 'mvn package'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                sh 'mvn test'
             }
         }
         stage('Deploy') {

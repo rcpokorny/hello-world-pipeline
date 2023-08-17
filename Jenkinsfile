@@ -16,6 +16,9 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage("Hello") {
+            greet name: 'Bob Pokorny', useUpperCase: true
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'

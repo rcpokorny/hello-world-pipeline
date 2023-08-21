@@ -17,7 +17,9 @@ pipeline {
             }
         }
         stage("Hello") {
-            greet name: 'Bob Pokorny', useUpperCase: true
+            steps {
+                greet name: 'Bob Pokorny', useUpperCase: true
+            }
         }
         stage('Deploy') {
             steps {

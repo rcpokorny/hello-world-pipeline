@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/rcpokorny/hello-world-pipeline.git'
+                //git 'https://github.com/rcpokorny/hello-world-pipeline.git'
                 sh 'mvn package'
             }
         }

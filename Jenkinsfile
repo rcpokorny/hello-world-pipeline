@@ -20,7 +20,7 @@ pipeline {
         }
         stage("Hello") {
             steps {
-                greet name: 'Bob Pokorny', useUpperCase: true
+                echo 'Hello World.  This is from the Jenkinsfile.'
             }
         }
         stage('Deploy') {

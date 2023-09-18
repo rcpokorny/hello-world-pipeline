@@ -9,7 +9,6 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/rcpokorny/hello-world-pipeline.git'
-                sh 'cd /var/jenkins_home/workspace/TestJava/demo'
                 sh 'mvn package'
             }
         }
